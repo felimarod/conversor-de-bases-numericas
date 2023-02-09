@@ -1,2 +1,7 @@
-# conversor-de-bases-numericas
-Tarea para la materia Arquitectura &amp; Laboratorio de Computadores
+# Arquitectura & Laboratorio de Computadores
+
+## Conversor de Bases Númericas
+
+- Adrian Stiven Olmos. Cod: 20181020039
+- Andrés Felipe Martín. Cod: 20201020137
+- Franco José Guzmán. Cod: 20211020155
