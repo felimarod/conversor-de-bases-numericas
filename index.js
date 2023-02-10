@@ -28,7 +28,7 @@ function regresar_num(num){
 function decimal_a_otra_base() {
     // if (datos_correctos()) {
     num = parseInt(document.getElementById("numero").value)
-    base_a_convertir = parseInt(document.getElementById("base").value)
+    base_a_convertir = parseInt(document.getElementById("basec").value)
     var ret = ""
     console.log(num, base_a_convertir)
 
@@ -38,6 +38,7 @@ function decimal_a_otra_base() {
         num = (num - mod) / base_a_convertir
     }
     ret = regresar_num(num) + ret
+    console.log(ret)
     solucion.innerHTML = "<p>" + "El número " + + " en base " + " es " + ret + "<\p>"
     // solucion.innerHTML = ret
     // } else {
