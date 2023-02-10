@@ -1,12 +1,42 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Conversor de Bases</title>
 </head>
+
 <body>
+    <div>
+        <form onsubmit=" return false">
+            <label for="nbasei">Base del número que desea convertir:</label><br>
+            <select name="nbasei" id="base">
+                <option value="2">Binaria</option>
+                <option value="8">Octal</option>
+                <option value="10">Decimal</option>
+                <option value="16">Hexadecimal</option>
+            </select> <br>
+            
+            <label for="nconvertir">Número a convertir:</label><br>
+            <input type="text" name="nconvertir" value="124" id="numero"><br><br>
     
+            <label for="nbase">Base a la que desea convertir el número:</label><br>
+            <select name="nbase" id="base">
+                <option value="2">Binaria</option>
+                <option value="8">Octal</option>
+                <option value="10">Decimal</option>
+                <option value="16">Hexadecimal</option>
+            </select> <br><br>
+    
+            <input type="submit" value="Calcular" onclick="calcular()">
+        </form>
+        <br>
+        <br>
+        <div id="solucion"></div>
+        <script src="index.js"></script>
+    </div>
 </body>
+
 </html>
