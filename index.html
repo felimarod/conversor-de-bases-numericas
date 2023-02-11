@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
     <title>Conversor de Bases</title>
 </head>
 
@@ -13,20 +14,20 @@
         <form onsubmit=" return false">
             <label for="nbasei">Base del número que desea convertir:</label><br>
             <select name="nbasei" id="basei">
-                <option value="2">Binaria</option>
+                <option value="2" selected="selected">Binaria</option>
                 <option value="8">Octal</option>
                 <option value="10">Decimal</option>
                 <option value="16">Hexadecimal</option>
             </select> <br>
             
             <label for="nconvertir">Número a convertir:</label><br>
-            <input type="text" name="nconvertir" value="124" id="numero"><br><br>
+            <input type="text" name="nconvertir" value="1111100" id="numero"><br><br>
     
             <label for="nbasec">Base a la que desea convertir el número:</label><br>
             <select name="nbasec" id="basec">
                 <option value="2">Binaria</option>
                 <option value="8">Octal</option>
-                <option value="10">Decimal</option>
+                <option value="10" selected="selected">Decimal</option>
                 <option value="16">Hexadecimal</option>
             </select> <br><br>
     
@@ -35,6 +36,7 @@
         <br>
         <br>
         <div id="solucion"></div>
+        <script src="conversor.js"></script>
         <script src="index.js"></script>
     </div>
 </body>
