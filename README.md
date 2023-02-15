@@ -7,3 +7,4 @@
 - Adrian Stiven Olmos. Cod: 20181020039
 - Andrés Felipe Martín. Cod: 20201020137
 - Franco José Guzmán. Cod: 20211020155
+- Kevin Nicolás Sierra González. Cod: 20182020151
