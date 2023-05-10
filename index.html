@@ -1,47 +1,72 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="description" content="Conversor de bases númericas" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css"
+      integrity="sha512-SbiR/eusphKoMVVXysTKG/7VseWii+Y3FdHrt0EpKgpToZeemhqHeZeLWLhJutz/2ut2Vw1uQEj2MbRF+TVBUA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.min.js"
+      integrity="sha512-wOLiP6uL5tNrV1FiutKtAyQGGJ1CWAsqQ6Kp2XZ12/CvZxw8MvNJfdhh0yTwjPIir4SWag2/MHrseR7PRmNtvA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <title>Conversor de Bases</title>
-</head>
+    <link rel="stylesheet" href="./css/index.css" />
+    <script src="js/index.js" type="module" defer></script>
+  </head>
 
-<body>
-    <div>
-        <form onsubmit=" return false">
-            <label for="nbasei">Base del número que desea convertir:</label><br>
-            <select class="form-select" name="nbasei" id="basei">
-                <option value="2" selected="selected">Binaria</option>
-                <option value="8">Octal</option>
-                <option value="10">Decimal</option>
-                <option value="16">Hexadecimal</option>
-            </select> <br>
-            
-            <label for="nconvertir">Número a convertir:</label><br>
-            <input type="text" name="nconvertir" value="1111100" id="numero"><br><br>
-    
-            <label for="nbasec">Base a la que desea convertir el número:</label><br>
-            <select name="nbasec" id="basec">
-                <option value="2">Binaria</option>
-                <option value="8">Octal</option>
-                <option value="10" selected="selected">Decimal</option>
-                <option value="16">Hexadecimal</option>
-            </select> <br><br>
-    
-            <input class="btn btn-dark" type="submit" value="Calcular" onclick="calcular()">
-        </form>
-        <br>
-        <br>
-        <div id="solucion"></div>
-        <script src="conversor.js"></script>
-        <script src="index.js"></script>
+  <body>
+    <div id="app">
+      <form id="formulario">
+        <div class="campo">
+          <label for="nbasei">Base del número que desea convertir:</label>
+          <select class="form-select" name="nbasei" id="basei">
+            <option value="2" selected="selected">Binaria</option>
+            <option value="8">Octal</option>
+            <option value="10">Decimal</option>
+            <option value="16">Hexadecimal</option>
+          </select>
+        </div>
+        <div class="campo">
+          <label for="nconvertir">Número a convertir:</label>
+          <div class="input-group flex-nowrap">
+            <span class="input-group-text" id="addon-wrapping">#</span>
+            <input
+              id="numero"
+              type="text"
+              class="form-control"
+              name="nconvertir"
+              placeholder="1111100"
+              autocomplete="off"
+            />
+          </div>
+        </div>
+        <div class="campo">
+          <label for="nbasec">Base a la que desea convertir el número:</label>
+          <select class="form-select" name="nbasec" id="basec">
+            <option value="2">Binaria</option>
+            <option value="8">Octal</option>
+            <option value="10" selected="selected">Decimal</option>
+            <option value="16">Hexadecimal</option>
+          </select>
+        </div>
+
+        <input
+          id="boton-calcular"
+          class="btn btn-dark"
+          type="submit"
+          value="Calcular"
+        />
+      </form>
+      <div id="solucion"></div>
     </div>
-</body>
-
+  </body>
 </html>

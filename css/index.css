@@ -1,0 +1,45 @@
+* {
+  background: #000;
+  color: #fff;
+  border-color: #ffff;
+  text-align: center;
+}
+
+body {
+  background-color: #000;
+  /* Centrar en la pantalla */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+
+  gap: 30px;
+}
+
+#formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 20px 20px;
+  border: #818181 solid 1px;
+  border-radius: 5px;
+}
+
+#formulario .campo {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.error {
+  border: red solid 4px;
+  background: rgb(255, 202, 202);
+  border-radius: 5px;
+  padding: 10px;
+  color: red;
+}
